@@ -202,6 +202,12 @@ OPCODES = [
     Opcode(0xbd, 'i64.reinterpret_f64',   None,                     0),
     Opcode(0xbe, 'f32.reinterpret_i32',   None,                     0),
     Opcode(0xbf, 'f64.reinterpret_i64',   None,                     0),
+
+    Opcode(0xc0, 'i32.extend8_s',         None,                     0),
+    Opcode(0xc1, 'i32.extend16_s',        None,                     0),
+    Opcode(0xc2, 'i64.extend8_s',         None,                     0),
+    Opcode(0xc3, 'i64.extend16_s',        None,                     0),
+    Opcode(0xc4, 'i64.extend32_s',        None,                     0),
 ]
 
 OPCODE_MAP = {x.id: x for x in OPCODES}
